@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Uygulama Logosu"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sıgn In"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't you have an acc? Sign Up"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

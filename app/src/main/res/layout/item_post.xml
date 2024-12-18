@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+    android:layout_weight="1"
+        android:text="Username"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:paddingBottom="8dp" />
+
+    <ImageButton
+        android:id="@+id/optionsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/uc_nokta_simgesi"
+        android:contentDescription="Options"
+        android:layout_gravity="end|center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Post"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/thumb" />
+
+        <TextView
+            android:id="@+id/likeCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="0 Likes"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/commentButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/comment" />
+
+        <TextView
+            android:id="@+id/commentCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0 Comments"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

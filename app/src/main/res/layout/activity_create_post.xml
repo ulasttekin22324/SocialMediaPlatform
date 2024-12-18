@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write sth..."
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose photo"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
